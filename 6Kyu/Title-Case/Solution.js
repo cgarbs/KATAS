@@ -18,3 +18,5 @@ function titleCase(title, minorWords) {
         } return titleArray.join(" ");
     } 
   }
+
+//   Solution is easy to read, subjectively, but repetitive - can be refactored.
