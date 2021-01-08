@@ -7,4 +7,4 @@ function findOdd(A) {
   return 0;
 }
 
-// Work in progress.
+// Work in progress. May need object-based solution.
