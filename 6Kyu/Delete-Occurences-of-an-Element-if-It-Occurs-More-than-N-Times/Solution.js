@@ -2,4 +2,4 @@ function deleteNth(arr,n){
     // ...
   }
 
-  // WORK IN PROGRESS
+  // STILL WORK IN PROGRESS
