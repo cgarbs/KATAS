@@ -23,3 +23,5 @@ function checkThreeAndTwo(array) {
       return false;
     }
   }
+
+  // Better way?
