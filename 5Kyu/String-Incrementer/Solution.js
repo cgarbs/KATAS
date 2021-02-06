@@ -34,3 +34,5 @@ function incrementString (strng) {
         const incrementedString = newStr.concat(newArray);
         return incrementedString
       }
+
+// Is refactoring possible in this approach?
