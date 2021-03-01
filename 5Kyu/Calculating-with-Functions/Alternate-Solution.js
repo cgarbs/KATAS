@@ -7,5 +7,3 @@ function plus(n)      { return function (a) { return a + n } }
 function minus(n)     { return function (a) { return a - n } }
 function times(n)     { return function (a) { return a * n } }
 function dividedBy(n) { return function (a) { return a / n } }
-
-// OR
