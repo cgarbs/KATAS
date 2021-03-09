@@ -20,3 +20,5 @@ function mxdiflg(a1, a2) {
 // Crazy one-liner.
 const mxdiflg = (a1, a2) =>
   a1.reduce((pre, val) => Math.max(pre, a2.reduce((p, v) => Math.max(p, Math.abs(val.length - v.length)), -1)), -1);
+
+// Math.abs?
