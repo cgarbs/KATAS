@@ -1,3 +1,13 @@
 function orderWeight(strng) {
-    // your code
+    let num = strng.split("")
+    let sum = num.reduce((a, b) => {
+      return parseInt(a) + parseInt(b);
+    }, 0);
+    
+    return sum
 }
+
+// Returns sum of one number's digits.
+
+// Must return sum of all numbers' digits in an array.
+// Returned array must dictate order of original array.
