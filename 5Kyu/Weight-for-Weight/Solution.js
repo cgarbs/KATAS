@@ -9,5 +9,5 @@ function orderWeight(strng) {
 
 // Returns sum of one number's digits.
 
-// Must return sum of all numbers' digits in an array.
+// Must loop to return sum of all numbers' digits in an array.
 // Returned array must dictate order of original array.
