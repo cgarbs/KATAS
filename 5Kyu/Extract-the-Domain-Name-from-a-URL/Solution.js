@@ -6,3 +6,4 @@ function domainName(url){
 // URL may or may not include HTTP, HTTPS or www
 // Do tests include URLs without a protocol or prefix?
 // Possible solution: parse from TLD backwards.
+// Solve coming soon.
