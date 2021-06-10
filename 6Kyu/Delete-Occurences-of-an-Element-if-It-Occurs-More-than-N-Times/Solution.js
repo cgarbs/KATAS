@@ -1,7 +1,7 @@
-// function deleteNth(arr,x) {
-//   var cache = {};
-//   return arr.filter(function(n) {
-//     cache[n] = (cache[n]||0) + 1;
-//     return cache[n] <= x;
-//   });
-// }
+function deleteNth(arr,n) {
+  let obj = {};
+  return arr.filter(function(e) {
+    obj[e] = (obj[e]||0) + 1;
+    return obj[e] <= n;
+  });
+}
