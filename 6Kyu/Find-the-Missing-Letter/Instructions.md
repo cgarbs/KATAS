@@ -11,6 +11,7 @@ Example:
 
 ["a","b","c","d","f"] -> "e"
 ["O","Q","R","S"] -> "P"
+
 (Use the English alphabet with 26 letters!)
 
 Have fun coding it and please don't forget to vote and rank this kata! :-)
