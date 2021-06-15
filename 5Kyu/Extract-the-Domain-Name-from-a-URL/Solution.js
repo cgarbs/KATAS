@@ -8,6 +8,7 @@ function domainName(url){
     }
   }
 
+  // WORK IN PROGRESS
 
 // for example:
 domainName('http://github.com/cgarbs')
