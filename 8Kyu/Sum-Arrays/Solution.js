@@ -3,6 +3,10 @@ function sum(numbers) {
     return numbers.reduce((a, b) => a + b, 0);
   }
 
+// In ES6 syntax:
+
+const sum = n => n.reduce((a,b) => a+b, 0);
+
 // OR
 
 // Sum Numbers

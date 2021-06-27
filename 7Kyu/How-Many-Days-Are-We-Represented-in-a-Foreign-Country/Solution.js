@@ -7,5 +7,3 @@ function daysRepresented(trips) {
   });
   return set.size;
 }
-
-// OR

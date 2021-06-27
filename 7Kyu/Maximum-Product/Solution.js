@@ -6,5 +6,3 @@ function adjacentElementsProduct(array) {
     multiplied.pop()
     return Math.max(...multiplied)
   }
-
-  // Is refactoring possible?

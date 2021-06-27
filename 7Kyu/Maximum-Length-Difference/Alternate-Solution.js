@@ -17,8 +17,7 @@ function mxdiflg(a1, a2) {
     return Math.max(Math.max(...l1) - Math.min(...l2), Math.max(...l2) - Math.min(...l1))
   }
 
-// Crazy one-liner.
+// One-liner w/ Math.abs
+
 const mxdiflg = (a1, a2) =>
   a1.reduce((pre, val) => Math.max(pre, a2.reduce((p, v) => Math.max(p, Math.abs(val.length - v.length)), -1)), -1);
-
-// Math.abs?
