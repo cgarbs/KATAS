@@ -16,3 +16,5 @@ domainName('http://github.com/cgarbs')
 // URL may or may not include HTTP, HTTPS or www
 // Do tests include URLs without a protocol or prefix?
 // Possible solution: parse from TLD backwards.
+// Include conditional for all TLDs (if possible)? 
+// (Would require limited number of well known TLDs)
