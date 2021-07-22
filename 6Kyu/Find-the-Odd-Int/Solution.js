@@ -11,3 +11,22 @@ function findOdd(A) {
     }
   }
 }
+
+//OR
+
+function findOdd(A) {
+  let arr = A.sort((a,b) => a - b)
+  console.log(arr)
+  let count = 1;
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i] === arr[i+1]) {
+      count++
+    } else {
+      if(count % 2 === 0) {
+        count = 1
+      } else {
+        return arr[i]
+      }
+    }
+  }
+}
