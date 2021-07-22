@@ -1,4 +1,18 @@
 sumPairs = (ints, s) => {
+  let numSet = new Set()
+  numSet.add(ints[0])
+  for (let i = 1; i < ints.length; i++){
+    let pair = s - ints[i]
+    if(numSet.has(pair)) {
+      return [pair, ints[i]]
+    }
+    numSet.add(ints[i])
+  }
+}
+
+//OR
+
+sumPairs = (ints, s) => {
   array = []
   sum = []
   for(let x = 0; array.length < ints.length; x++) {
@@ -14,17 +28,5 @@ sumPairs = (ints, s) => {
   }
 }
 
-// Solution passes all tests but does not complete long list tests
-// (execution time out)
-
-sumPairs = (ints, s) => {
-  let numSet = new Set()
-  numSet.add(ints[0])
-  for (let i = 1; i < ints.length; i++){
-    let pair = s - ints[i]
-    if(numSet.has(pair)) {
-      return [pair, ints[i]]
-    }
-    numSet.add(ints[i])
-  }
-}
+// Solution passes all tests but does not complete long list tests.
+// (Execution time out)
