@@ -1,14 +1,6 @@
-function orderWeight(strng) {
-    let num = strng.split("")
-    let sum = num.reduce((a, b) => {
-      return parseInt(a) + parseInt(b);
-    }, 0);
-    
-    return sum
+const orderWeight = (strng) => {
+  const weight = (x) => x.split('').map(Number).reduce((a,b) => a + b)
+  return strng.split(" ").sort((a,b) => {
+    return weight(a) === weight(b) ? a.localeCompare(b) : weight(a) - weight(b)
+  }).join(' ')
 }
-
-// Currently eturns sum of one number's digits.
-
-// Must loop to return sum of all numbers' digits in an array.
-// Returned array must dictate order of original array.
-// Full solution coming soon.
