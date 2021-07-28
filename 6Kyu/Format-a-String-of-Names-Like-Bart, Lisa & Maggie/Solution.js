@@ -1,6 +1,5 @@
-function list(names){
-    //your code here
-  }
-
-
-// Work in progress - solution coming soon.
+function list(names) {
+  let arr = names.map(e => e.name)
+  let last = arr.pop()
+  return arr.length ? arr.join(", ") + " & " + last : last || ""
+}
