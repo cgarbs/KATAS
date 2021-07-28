@@ -6,3 +6,8 @@ function findMissingLetter(array) {
       }
     }
   }
+
+  function findMissingLetter(array) {
+    let i = array[0].charCodeAt(0);
+    return String.fromCharCode(array.find(el => el.charCodeAt(0) != i++).charCodeAt(0) - 1);
+  }
