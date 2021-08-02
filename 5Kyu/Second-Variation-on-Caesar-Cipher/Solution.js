@@ -7,8 +7,9 @@ function encodeStr(s, shift) {
     let encoded = ascii.map(x => String.fromCharCode(x))
     let result = prefix.concat(encoded.join(''))
     let x = Math.ceil(result.length / 5)
-    // let re = new RegExp(/.test/)
-    // console.log(result.match(/.{1,x}/g))
+
+    // let re = new RegExp(/.test/) --> constructing new regular expression
+    // console.log(result.match(/.{1,x}/g)) --> will return correct result if variable for length can be placed as quantifier
   }
   
   function decode(arr) {
@@ -20,3 +21,6 @@ function encodeStr(s, shift) {
   //  ["ijJ tipvme ibw", "f lopxo uibu z", "pv xpvme ibwf ", "b qfsgfdu botx", "fs gps nf!!!"]
 
   //WORK IN PROGRESS
+
+  // .match solution requires variable (length of the encoded message - the result) as a quantifier inside the regular expression
+  // splice (most likely the most efficient method) and array loop are also possible solutions
