@@ -7,10 +7,8 @@ function encodeStr(s, shift) {
     let encoded = ascii.map(x => String.fromCharCode(x))
     let result = prefix.concat(encoded.join(''))
     let x = Math.ceil(result.length / 5)
-
-    // let re = new RegExp(/.test/) --> constructing new regular expression
-    // console.log(result.match(/.{1,x}/g)) --> will return correct result if variable for length can be placed as quantifier
-  }
+    return result.match(new RegExp('.{1,' + x + '}', 'g'));
+  }  
   
   function decode(arr) {
       // your code
@@ -20,7 +18,4 @@ function encodeStr(s, shift) {
   encodeStr("I should have known that you would have a perfect answer for me!!!", 1)
   //  ["ijJ tipvme ibw", "f lopxo uibu z", "pv xpvme ibwf ", "b qfsgfdu botx", "fs gps nf!!!"]
 
-  //WORK IN PROGRESS
-
-  // .match solution requires variable (length of the encoded message - the result) as a quantifier inside the regular expression
-  // splice (most likely the most efficient method) and array loop are also possible solutions
+//   result.match(/.{1,x}/g)
