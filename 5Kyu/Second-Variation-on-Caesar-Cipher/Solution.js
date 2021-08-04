@@ -1,3 +1,5 @@
+//WORK IN PROGRESS.
+
 function encodeStr(s, shift) {
     let first = String.fromCharCode(s.charCodeAt(s[0]) + shift).toLowerCase()
     let prefix = s[0].toLowerCase().concat(first)
