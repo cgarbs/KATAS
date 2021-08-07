@@ -2,7 +2,8 @@
 var numberToPrice = function(number) {
     let num = number.toString().split('.')
     let count = 0;
-    //REGEX SOLUTION FOR NUM[0]?
+    // INSERT COMMA EVERY 3 CHARACTERS FROM RIGHT TO LEFT
+    // (END TO BEGINNING)
     // for(let i = num[0].length - 1; i >= 0; i--) {
     //   console.log(i, count)
     //   count++
