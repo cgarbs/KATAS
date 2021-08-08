@@ -3,4 +3,6 @@ function balancedParens(n) {
   }
 
 // Solution can use a stack involving a string containing
-// all possible characters, identical to onRamp testing.
+// all possible characters, comparing characters by index
+// (evens to odds), returning boolean if characters are both equal
+// ordered and balanced (identical to onRamp testing).
