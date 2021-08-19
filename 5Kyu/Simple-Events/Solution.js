@@ -1,4 +1,17 @@
-function Event() {
-    //your implementation goes here  
-  }
+class Event {
+    constructor() {
+      this.subscribers = new Set();
+    }
   
+    subscribe(func) {
+      this.subscribers.add(func);
+    }
+    
+    unsubscribe(func) {
+      this.subscribers.delete(func);
+    }
+    
+    emit(...args) {
+      this.subscribers.forEach(x => x(...args));
+    }
+  }
