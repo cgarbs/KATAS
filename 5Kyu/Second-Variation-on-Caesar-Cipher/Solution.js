@@ -21,3 +21,5 @@ function encodeStr(s, shift) {
   //  ["ijJ tipvme ibw", "f lopxo uibu z", "pv xpvme ibwf ", "b qfsgfdu botx", "fs gps nf!!!"]
 
 //   result.match(/.{1,x}/g)
+
+// WORK IN PROGRESS - INCOMPLETE.
