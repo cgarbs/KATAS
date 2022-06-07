@@ -1,0 +1,3 @@
+function minUmbrellas(weather) {
+    // TODO
+  }
