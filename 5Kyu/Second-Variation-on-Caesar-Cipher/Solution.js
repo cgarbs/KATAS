@@ -17,9 +17,27 @@
 //   }
 
 
-  const encodeStr = (s, shift) => {
-  }  
+const encodeStr = (s, shift) => {
+  const rotate = s[0].toLowerCase() + String.fromCharCode(s[0].toLowerCase().charCodeAt(0) + shift)
+  const encoded = s.split('').map((e) => e.charCodeAt(0)).map((e) => e < 48 ? String.fromCharCode(e) : String.fromCharCode(e + shift))
   
-
- const decode = (arr) => {
-}
+    encoded.unshift(rotate[1])
+    encoded.unshift(rotate[0])
+    console.log(s.length)
+    console.log(rotate)
+    console.log(encoded)
+    
+  const chunkSize = Math.ceil(encoded.length / 5);
+  const newArray = []
+    
+  for(let i = 0; i < encoded.length; i += chunkSize) {
+    let chunk = encoded.slice(i, i + chunkSize);
+    newArray.push(chunk.join(''))
+  }
+    console.log(newArray)
+    return newArray
+  }
+  
+  function decode(arr) {
+      console.log(arr)
+  }
