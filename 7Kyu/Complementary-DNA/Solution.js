@@ -5,5 +5,5 @@ const DNAStrand = (dna) => dna.split('').map((e) => e === "A" ? "T"
 
 //OR
 
-const DNAStrand = (dna) => dna.split('').map(function(v) {return {A:'T', T:'A', C:'G', G:'C'}[v];}).join('');
+const DNAStrand = (dna) => dna.split('').map((v) => {return {A:'T', T:'A', C:'G', G:'C'}[v]}).join('');
                                               
