@@ -1,17 +1,20 @@
 const multTriangle = (n) => {
+  let multiples = []
   let array = []
-  let result = []
   
   for(let i = 1; i <= n; i++) {
     for(let j = 1; j <= i; j++) {
-      array.push(i * j)
+      j === i ? multiples.push(i * j) : multiples.push(i * j) && multiples.push(i * j)
     } 
-    result.push(array)
-    array = []
+    array.push(multiples)
+    multiples = []
   }
-  
-  console.log(result)
+  const result = []
+  result[0] = array.flat().reduce((a, b) => a + b, 0)
+  result[1] = array.flat().filter((e) => e % 2 === 0).reduce((a, b) => a + b, 0)
+  result[2] = array.flat().filter((e) => e % 2 !== 0).reduce((a, b) => a + b, 0)
+
+  return result
 }
 
-
- multTriangle(3)
+// Code works, but not inside codewars due to flat().
