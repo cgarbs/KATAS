@@ -1,0 +1,3 @@
+function digPow(n, p){
+    // ...
+  }
