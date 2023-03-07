@@ -1,4 +1,5 @@
-// complete the function
-function solution(string) {
+const solution = (string) => {
     
 }
+
+// Solution coming soon.
